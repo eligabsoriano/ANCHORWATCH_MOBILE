@@ -1,19 +1,33 @@
-# anchorwatch
+# AnchorWatch Mobile
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+AnchorWatch Mobile is a cross-platform Flutter client for monitoring stablecoin and macro-financial data. It provides account authentication, a financial dashboard, charts and market insights, alert and notification management, maintenance status monitoring, support/contact tools, and real-time communication with the AnchorWatch backend.
 
-This project is a starting point for a Flutter application.
+The app follows a layered architecture with separate domain, data, presentation, routing, service, and utility layers. State is managed with BLoC, while dependency injection and repository implementations keep UI components separated from backend integrations.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter and Dart
+- BLoC / Cubit with `flutter_bloc`
+- Dio for REST API communication
+- WebSocket channel support
+- GetIt and Injectable for dependency injection
+- Shared Preferences for local state
+- Syncfusion Flutter Charts
+- Image Picker and AWS S3 upload support
+- Android, iOS, web, Windows, macOS, and Linux targets
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Key Features
 
-//to run the data injection
-flutter pub run build_runner build --delete-conflicting-outputs
+- Secure registration, login, logout, password recovery, profile, and session management
+- Stablecoin dashboard with supply, market, chart, and data-quality information
+- Macro trends and financial chart summaries
+- Price, volume, sentiment, anomaly, and system-health alerts
+- Real-time alert updates through WebSockets
+- Local email notifications and device notification support
+- Maintenance-mode detection and monitoring
+- Onboarding flow and responsive bottom navigation
+- AnchorWise chat and conversation history
+- FAQ, contact support, and feedback workflows
+- Profile image selection and upload
